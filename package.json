@@ -18,12 +18,13 @@
   "homepage": "https://github.com/SafeMarket/solc-compile-amorph#readme",
   "dependencies": {
     "amorph": "^1.1.0",
-    "amorph-hex": "^1.0.2",
     "arguguard": "0.0.5",
     "solidity-sha3": "^0.4.1",
     "testable-error": "^0.1.1"
   },
   "devDependencies": {
+    "amorph": "^1.1.0",
+    "amorph-hex": "^1.0.2",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "solc": "^0.4.8"

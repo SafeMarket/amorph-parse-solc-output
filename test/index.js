@@ -2,7 +2,11 @@ const amorphParseSolcOuptut = require('../')
 const solc = require('solc')
 const chai = require('chai')
 const SolcCompilationError = require('../lib/errors/SolcCompilationError')
-const Amorph = require('../lib/Amorph')
+const Amorph = require('Amorph')
+const amorphHexPlugin = require('amorph-hex')
+
+Amorph.loadPlugin(amorphHexPlugin)
+Amorph.ready()
 
 chai.should()
 
@@ -26,11 +30,11 @@ describe('amorphParseSolcOuptut', () => {
   let parsed
   it('should throw SolcCompilationError for bad contract', () => {
     (() => {
-      amorphParseSolcOuptut(badOutput)
+      amorphParseSolcOuptut(badOutput, Amorph)
     }).should.throw(SolcCompilationError)
   })
   it('should parse goodOutput', () => {
-    parsed = amorphParseSolcOuptut(goodOutput)
+    parsed = amorphParseSolcOuptut(goodOutput, Amorph)
   })
   describe('parsed', () => {
     it('should have Good contract', () => {
