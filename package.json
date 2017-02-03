@@ -20,6 +20,7 @@
     "amorph": "^1.1.0",
     "amorph-hex": "^1.0.2",
     "arguguard": "0.0.5",
+    "solidity-sha3": "^0.4.1",
     "testable-error": "^0.1.1"
   },
   "devDependencies": {
