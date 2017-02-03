@@ -1,6 +1,6 @@
 {
   "name": "amorph-parse-solc-output",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Parse solc output and return amorphic values",
   "main": "index.js",
   "scripts": {
