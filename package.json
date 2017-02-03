@@ -1,0 +1,30 @@
+{
+  "name": "amorph-parse-solc-output",
+  "version": "0.0.0",
+  "description": "Parse solc output and return amorphic values",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SafeMarket/solc-compile-amorph.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SafeMarket/solc-compile-amorph/issues"
+  },
+  "homepage": "https://github.com/SafeMarket/solc-compile-amorph#readme",
+  "dependencies": {
+    "amorph": "^1.1.0",
+    "amorph-hex": "^1.0.2",
+    "arguguard": "0.0.5",
+    "testable-error": "^0.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "solc": "^0.4.8"
+  }
+}
