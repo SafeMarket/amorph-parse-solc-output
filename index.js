@@ -11,7 +11,6 @@ module.exports = function amorphParseSolcOuptut(output) {
   const contracts = {}
   Object.keys(output.contracts).forEach((contractName) => {
     _contract = output.contracts[contractName]
-    console.log(_contract)
     contracts[contractName] = {
       name: contractName,
       code: new Amorph(_contract.bytecode, 'hex'),
