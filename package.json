@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/SafeMarket/solc-compile-amorph.git"
+    "url": "git+ssh://git@github.com/SafeMarket/amorph-parse-solc-output.git"
   },
   "author": "",
   "license": "MIT",
