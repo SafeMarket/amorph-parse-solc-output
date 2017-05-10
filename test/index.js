@@ -3,10 +3,6 @@ const solc = require('solc')
 const chai = require('chai')
 const SolcCompilationError = require('../lib/errors/SolcCompilationError')
 const Amorph = require('Amorph')
-const amorphHexPlugin = require('amorph-hex')
-
-Amorph.loadPlugin(amorphHexPlugin)
-Amorph.ready()
 
 chai.should()
 
@@ -38,22 +34,22 @@ describe('amorphParseSolcOuptut', () => {
   })
   describe('parsed', () => {
     it('should have Good contract', () => {
-      parsed.should.have.keys(['Good'])
+      parsed.should.have.keys([':Good'])
     })
     it('name should be Good', () => {
-      parsed.Good.name.should.equal('Good')
+      parsed[':Good'].name.should.equal(':Good')
     })
     it('code should be amorph', () => {
-      parsed.Good.code.should.instanceof(Amorph)
+      parsed[':Good'].code.should.instanceof(Amorph)
     })
     it('codeHash should be amorph', () => {
-      parsed.Good.codeHash.should.instanceof(Amorph)
+      parsed[':Good'].codeHash.should.instanceof(Amorph)
     })
     it('runcode should be amorph', () => {
-      parsed.Good.runcode.should.instanceof(Amorph)
+      parsed[':Good'].runcode.should.instanceof(Amorph)
     })
     it('abi should be a pojo', () => {
-      parsed.Good.abi.should.be.instanceof(Object)
+      parsed[':Good'].abi.should.be.instanceof(Object)
     })
   })
 })

@@ -3,7 +3,7 @@ const arguguard = require('arguguard')
 const soliditySha3 = require('solidity-sha3')
 
 module.exports = function amorphParseSolcOuptut(output, Amorph) {
-  arguguard('amorphParseSolcOuptut', [Object, Function], arguments)
+  arguguard('amorphParseSolcOuptut', ['Object', 'function'], arguments)
   if(output.errors) {
     throw new SolcCompilationError(output.errors[0])
   }
